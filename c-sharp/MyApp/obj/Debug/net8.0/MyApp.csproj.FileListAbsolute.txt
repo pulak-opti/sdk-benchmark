@@ -1,0 +1,7 @@
+/Users/pulak.bhowmick/sdk-benchmark/c-sharp/MyApp/obj/Debug/net8.0/MyApp.csproj.AssemblyReference.cache
+/Users/pulak.bhowmick/sdk-benchmark/c-sharp/MyApp/obj/Debug/net8.0/MyApp.GeneratedMSBuildEditorConfig.editorconfig
+/Users/pulak.bhowmick/sdk-benchmark/c-sharp/MyApp/obj/Debug/net8.0/MyApp.AssemblyInfoInputs.cache
+/Users/pulak.bhowmick/sdk-benchmark/c-sharp/MyApp/obj/Debug/net8.0/MyApp.AssemblyInfo.cs
+/Users/pulak.bhowmick/sdk-benchmark/c-sharp/MyApp/obj/Debug/net8.0/MyApp.csproj.CoreCompileInputs.cache
+/Users/pulak.bhowmick/sdk-benchmark/c-sharp/MyApp/obj/Debug/net8.0/MyApp.MvcApplicationPartsAssemblyInfo.cache
+/Users/pulak.bhowmick/sdk-benchmark/c-sharp/MyApp/obj/Debug/net8.0/MyApp.sourcelink.json
