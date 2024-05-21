@@ -1,0 +1,10 @@
+source 'https://rubygems.org'
+
+gem 'sinatra'
+gem 'json'
+gem 'optimizely-sdk'
+gem 'rack'
+gem 'httparty'
+gem 'rackup'
+gem 'rubocop'
+gem 'webrick'

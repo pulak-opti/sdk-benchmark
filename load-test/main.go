@@ -30,7 +30,7 @@ func main() {
 		}
 		body := bytes.NewReader(payloadBytes)
 
-		req, err := http.NewRequest("POST", "http://localhost:5000/decide", body)
+		req, err := http.NewRequest("POST", "http://localhost:4567/decide", body)
 		if err != nil {
 			log.Fatalln(err)
 		}
@@ -41,7 +41,10 @@ func main() {
 		if err != nil {
 			log.Fatalln(err)
 		}
-
 		resp.Body.Close()
+
+		if resp.StatusCode != http.StatusOK {
+			log.Fatalf("unexpected status code: %d", resp.StatusCode)
+		}
 	}
 }
