@@ -30,7 +30,7 @@ func main() {
 		}
 		body := bytes.NewReader(payloadBytes)
 
-		req, err := http.NewRequest("POST", "http://localhost:4567/decide", body)
+		req, err := http.NewRequest("POST", "http://localhost:5000/decide", body)
 		if err != nil {
 			log.Fatalln(err)
 		}
