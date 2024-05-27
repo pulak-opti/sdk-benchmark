@@ -1,0 +1,6 @@
+{
+    "require": {
+        "optimizely/optimizely-sdk": "^4.0",
+        "slim/slim": "^4.13"
+    }
+}

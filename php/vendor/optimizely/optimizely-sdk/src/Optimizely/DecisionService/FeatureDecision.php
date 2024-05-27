@@ -1,0 +1,87 @@
+<?php
+/**
+ * Copyright 2017, 2019, 2021 Optimizely Inc and Contributors
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+namespace Optimizely\DecisionService;
+
+class FeatureDecision
+{
+    const DECISION_SOURCE_FEATURE_TEST = 'feature-test';
+    const DECISION_SOURCE_ROLLOUT = 'rollout';
+    const DECISION_SOURCE_EXPERIMENT = 'experiment';
+
+    /**
+     * The experiment in this decision.
+     *
+     * @var Experiment
+     */
+    private $_experiment;
+
+    /**
+     * The variation in this decision.
+     *
+     * @var Variation
+     */
+    private $_variation;
+
+    /**
+     * The source of the decision. Either DECISION_SOURCE_FEATURE_TEST or DECISION_SOURCE_ROLLOUT
+     *
+     * @var string
+     */
+    private $_source;
+
+    /**
+     * Array of log messages that represent decision making.
+     *
+     * @var array
+     */
+    private $reasons;
+
+    /**
+     * FeatureDecision constructor.
+     *
+     * @param $experiment
+     * @param $variation
+     * @param $source
+     */
+    public function __construct($experiment, $variation, $source, array $reasons = [])
+    {
+        $this->_experiment = $experiment;
+        $this->_variation = $variation;
+        $this->_source = $source;
+        $this->reasons = $reasons;
+    }
+
+    public function getExperiment()
+    {
+        return $this->_experiment;
+    }
+
+    public function getVariation()
+    {
+        return $this->_variation;
+    }
+
+    public function getSource()
+    {
+        return $this->_source;
+    }
+
+    public function getReasons()
+    {
+        return $this->reasons;
+    }
+}
